@@ -3,6 +3,7 @@ import withRoot from '../modules/withRoot';
 import AppAppBar from '../modules/views/AppAppBar';
 import SearchWindow from '../modules/views/SearchWindow';
 //import Background from '../img/background_image.jpg';
+import ScrollView from '../modules/views/ScrollView';
 
 const styles = {
     paperContainer: {
@@ -15,6 +16,7 @@ const styles = {
     }
 };
 
+
 class App extends React.Component {
     render(){
         return (
@@ -23,6 +25,7 @@ class App extends React.Component {
                 <AppAppBar />
                 <SearchWindow />
                 </div>
+                <ScrollView />
             </React.Fragment>
         );
     }

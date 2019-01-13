@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\LogIn.js"],{
 
 /***/ "./modules/components/AppBar.js":
 /*!**************************************!*\
@@ -112,61 +112,6 @@ function Button(props) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(Button));
-
-/***/ }),
-
-/***/ "./modules/components/Card.js":
-/*!************************************!*\
-  !*** ./modules/components/Card.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Card */ "./node_modules/@material-ui/core/Card/index.js");
-/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\modules\\components\\Card.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    card: {
-      display: 'flex',
-      width: 50
-    }
-  };
-};
-
-function MediaControlCard(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, _extends({}, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }));
-}
-
-MediaControlCard.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles, {
-  withTheme: true
-})(MediaControlCard));
 
 /***/ }),
 
@@ -1621,412 +1566,6 @@ AppForm.propTypes = {
   classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(AppForm));
-
-/***/ }),
-
-/***/ "./modules/views/ScrollView.js":
-/*!*************************************!*\
-  !*** ./modules/views/ScrollView.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Card */ "./modules/components/Card.js");
-/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CardContent */ "./node_modules/@material-ui/core/CardContent/index.js");
-/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/CardMedia */ "./node_modules/@material-ui/core/CardMedia/index.js");
-/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/Typography/index.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\modules\\views\\ScrollView.js";
-
-
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    details: {
-      display: 'flex',
-      flexDirection: 'column'
-    },
-    content: {
-      flex: '1 0 auto'
-    },
-    cover: {
-      width: 151
-    },
-    controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing.unit,
-      paddingBottom: theme.spacing.unit
-    },
-    playIcon: {
-      height: 38,
-      width: 38
-    }
-  };
-};
-
-function ScrollView(props) {
-  var classes = props.classes,
-      theme = props.theme;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    position: "absolute",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.details,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    className: classes.content,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    component: "h5",
-    variant: "h5",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "Live From Space"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    variant: "subtitle1",
-    color: "textSecondary",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, "Mac Miller"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    className: classes.cover,
-    image: "/static/images/cards/live-from-space.jpg",
-    title: "Live from space album cover",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }));
-}
-
-ScrollView.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(ScrollView));
-
-/***/ }),
-
-/***/ "./modules/views/SearchWindow.js":
-/*!***************************************!*\
-  !*** ./modules/views/SearchWindow.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/Grid/index.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_final_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-final-form */ "./node_modules/react-final-form/dist/react-final-form.es.js");
-/* harmony import */ var _components_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Typography */ "./modules/components/Typography.js");
-/* harmony import */ var _views_AppForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/AppForm */ "./modules/views/AppForm.js");
-/* harmony import */ var _form_validation__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../form/validation */ "./modules/form/validation.js");
-/* harmony import */ var _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../form/RFTextField */ "./modules/form/RFTextField.js");
-/* harmony import */ var _form_FormButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../form/FormButton */ "./modules/form/FormButton.js");
-/* harmony import */ var _form_FormFeedback__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../form/FormFeedback */ "./modules/form/FormFeedback.js");
-/* harmony import */ var _next_Link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../next/Link */ "./modules/next/Link.js");
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\modules\\views\\SearchWindow.js";
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    box: {
-      position: 'absolute',
-      left: 550,
-      top: 150,
-      borderRadius: 50
-    }
-  };
-};
-
-var SearchWindow =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(SearchWindow, _React$Component);
-
-  function SearchWindow() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, SearchWindow);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchWindow)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      sent: false
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "validate", function (values) {
-      var errors = Object(_form_validation__WEBPACK_IMPORTED_MODULE_8__["required"])(['firstName', 'lastName', 'email', 'password'], values, _this.props);
-
-      if (!errors.email) {
-        var emailError = Object(_form_validation__WEBPACK_IMPORTED_MODULE_8__["email"])(values.email, values, _this.props);
-
-        if (emailError) {
-          errors.email = Object(_form_validation__WEBPACK_IMPORTED_MODULE_8__["email"])(values.email, values, _this.props);
-        }
-      }
-
-      return errors;
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function () {});
-
-    return _this;
-  }
-
-  _createClass(SearchWindow, [{
-    key: "render",
-    value: function render() {
-      var classes = this.props.classes;
-      var sent = this.state.sent;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.box,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_AppForm__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        variant: "h4",
-        gutterBottom: true,
-        align: "left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, "Book unique homes and experiences.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Form"], {
-        onSubmit: this.handleSubmit,
-        subscription: {
-          submitting: true
-        },
-        validate: this.validate,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }, function (_ref) {
-        var handleSubmit = _ref.handleSubmit,
-            submitting = _ref.submitting;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-          onSubmit: handleSubmit,
-          noValidate: true,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 63
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          container: true,
-          spacing: 16,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 64
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          item: true,
-          xs: 12,
-          sm: 12,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 65
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          fullWidth: true,
-          label: "Where",
-          name: "where",
-          required: true,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 66
-          },
-          __self: this
-        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          item: true,
-          xs: 12,
-          sm: 12,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 74
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          disabled: submitting || sent,
-          fullWidth: true,
-          label: "Check In",
-          margin: "normal",
-          name: "checkin",
-          type: "date",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 75
-          },
-          __self: this
-        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          disabled: submitting || sent,
-          fullWidth: true,
-          label: "Check In",
-          margin: "normal",
-          name: "checkin",
-          type: "date",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 86
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          fullWidth: true,
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          disabled: submitting || sent,
-          name: "guests",
-          label: "Guests",
-          type: "select",
-          margin: "normal",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 95
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["FormSpy"], {
-          subscription: {
-            submitError: true
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 104
-          },
-          __self: this
-        }, function (_ref2) {
-          var submitError = _ref2.submitError;
-          return submitError ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_FormFeedback__WEBPACK_IMPORTED_MODULE_11__["default"], {
-            className: classes.feedback,
-            error: true,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 107
-            },
-            __self: this
-          }, submitError) : null;
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_FormButton__WEBPACK_IMPORTED_MODULE_10__["default"], {
-          className: classes.button,
-          disabled: submitting || sent,
-          color: "secondary",
-          fullWidth: true,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 113
-          },
-          __self: this
-        }, submitting || sent ? 'In progress…' : 'Search'));
-      })));
-    }
-  }]);
-
-  return SearchWindow;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-SearchWindow.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["withStyles"])(styles)(SearchWindow));
 
 /***/ }),
 
@@ -5130,367 +4669,6 @@ var _ButtonBase = _interopRequireDefault(__webpack_require__(/*! ./ButtonBase */
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/Card/Card.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@material-ui/core/Card/Card.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _Paper = _interopRequireDefault(__webpack_require__(/*! ../Paper */ "./node_modules/@material-ui/core/Paper/index.js"));
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-// @inheritedComponent Paper
-var styles = {
-  /* Styles applied to the root element. */
-  root: {
-    overflow: 'hidden'
-  }
-};
-exports.styles = styles;
-
-function Card(props) {
-  var classes = props.classes,
-      className = props.className,
-      raised = props.raised,
-      other = (0, _objectWithoutProperties2.default)(props, ["classes", "className", "raised"]);
-  return _react.default.createElement(_Paper.default, (0, _extends2.default)({
-    className: (0, _classnames.default)(classes.root, className),
-    elevation: raised ? 8 : 1
-  }, other));
-}
-
- true ? Card.propTypes = {
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * If `true`, the card will use raised styling.
-   */
-  raised: _propTypes.default.bool
-} : undefined;
-Card.defaultProps = {
-  raised: false
-};
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiCard'
-})(Card);
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/Card/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@material-ui/core/Card/index.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _Card.default;
-  }
-});
-
-var _Card = _interopRequireDefault(__webpack_require__(/*! ./Card */ "./node_modules/@material-ui/core/Card/Card.js"));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/CardContent/CardContent.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@material-ui/core/CardContent/CardContent.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _utils = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/index.es.js");
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-var styles = {
-  /* Styles applied to the root element. */
-  root: {
-    padding: 16,
-    '&:last-child': {
-      paddingBottom: 24
-    }
-  }
-};
-exports.styles = styles;
-
-function CardContent(props) {
-  var classes = props.classes,
-      className = props.className,
-      Component = props.component,
-      other = (0, _objectWithoutProperties2.default)(props, ["classes", "className", "component"]);
-  return _react.default.createElement(Component, (0, _extends2.default)({
-    className: (0, _classnames.default)(classes.root, className)
-  }, other));
-}
-
- true ? CardContent.propTypes = {
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: _utils.componentPropType
-} : undefined;
-CardContent.defaultProps = {
-  component: 'div'
-};
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiCardContent'
-})(CardContent);
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/CardContent/index.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@material-ui/core/CardContent/index.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _CardContent.default;
-  }
-});
-
-var _CardContent = _interopRequireDefault(__webpack_require__(/*! ./CardContent */ "./node_modules/@material-ui/core/CardContent/CardContent.js"));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/CardMedia/CardMedia.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@material-ui/core/CardMedia/CardMedia.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _warning = _interopRequireDefault(__webpack_require__(/*! warning */ "./node_modules/warning/warning.js"));
-
-var _utils = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/index.es.js");
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-var styles = {
-  /* Styles applied to the root element. */
-  root: {
-    display: 'block',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center'
-  },
-
-  /* Styles applied to the root element if `component="video, audio, picture, iframe, or img"`. */
-  media: {
-    width: '100%'
-  }
-};
-exports.styles = styles;
-var MEDIA_COMPONENTS = ['video', 'audio', 'picture', 'iframe', 'img'];
-
-function CardMedia(props) {
-  var classes = props.classes,
-      className = props.className,
-      Component = props.component,
-      image = props.image,
-      src = props.src,
-      style = props.style,
-      other = (0, _objectWithoutProperties2.default)(props, ["classes", "className", "component", "image", "src", "style"]);
-   true ? (0, _warning.default)(Boolean(image || src), 'Material-UI: either `image` or `src` property must be specified.') : undefined;
-  var isMediaComponent = MEDIA_COMPONENTS.indexOf(Component) !== -1;
-  var composedStyle = !isMediaComponent && image ? (0, _extends2.default)({
-    backgroundImage: "url(\"".concat(image, "\")")
-  }, style) : style;
-  return _react.default.createElement(Component, (0, _extends2.default)({
-    className: (0, _classnames.default)(classes.root, (0, _defineProperty2.default)({}, classes.media, isMediaComponent), className),
-    style: composedStyle,
-    src: isMediaComponent ? image || src : undefined
-  }, other));
-}
-
- true ? CardMedia.propTypes = {
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * Component for rendering image.
-   * Either a string to use a DOM element or a component.
-   */
-  component: _utils.componentPropType,
-
-  /**
-   * Image to be displayed as a background image.
-   * Either `image` or `src` prop must be specified.
-   * Note that caller must specify height otherwise the image will not be visible.
-   */
-  image: _propTypes.default.string,
-
-  /**
-   * An alias for `image` property.
-   * Available only with media components.
-   * Media components: `video`, `audio`, `picture`, `iframe`, `img`.
-   */
-  src: _propTypes.default.string,
-
-  /**
-   * @ignore
-   */
-  style: _propTypes.default.object
-} : undefined;
-CardMedia.defaultProps = {
-  component: 'div'
-};
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiCardMedia'
-})(CardMedia);
-
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/CardMedia/index.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@material-ui/core/CardMedia/index.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _CardMedia.default;
-  }
-});
-
-var _CardMedia = _interopRequireDefault(__webpack_require__(/*! ./CardMedia */ "./node_modules/@material-ui/core/CardMedia/CardMedia.js"));
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/core/CssBaseline/CssBaseline.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@material-ui/core/CssBaseline/CssBaseline.js ***!
@@ -7052,451 +6230,6 @@ Object.defineProperty(exports, "default", {
 });
 
 var _FormLabel = _interopRequireDefault(__webpack_require__(/*! ./FormLabel */ "./node_modules/@material-ui/core/FormLabel/FormLabel.js"));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/Grid/Grid.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@material-ui/core/Grid/Grid.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/defineProperty.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/extends.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
-
-var _utils = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/index.es.js");
-
-var _withStyles = _interopRequireDefault(__webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js"));
-
-var _createBreakpoints = __webpack_require__(/*! ../styles/createBreakpoints */ "./node_modules/@material-ui/core/styles/createBreakpoints.js");
-
-var _requirePropFactory = _interopRequireDefault(__webpack_require__(/*! ../utils/requirePropFactory */ "./node_modules/@material-ui/core/utils/requirePropFactory.js"));
-
-// A grid component using the following libs as inspiration.
-//
-// For the implementation:
-// - http://v4-alpha.getbootstrap.com/layout/flexbox-grid/
-// - https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
-// - https://github.com/roylee0704/react-flexbox-grid
-// - https://material.angularjs.org/latest/layout/introduction
-//
-// Follow this flexbox Guide to better understand the underlying model:
-// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-var GUTTERS = [0, 8, 16, 24, 32, 40];
-var GRID_SIZES = ['auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
-function generateGrid(globalStyles, theme, breakpoint) {
-  var styles = {};
-  GRID_SIZES.forEach(function (size) {
-    var key = "grid-".concat(breakpoint, "-").concat(size);
-
-    if (size === true) {
-      // For the auto layouting
-      styles[key] = {
-        flexBasis: 0,
-        flexGrow: 1,
-        maxWidth: '100%'
-      };
-      return;
-    }
-
-    if (size === 'auto') {
-      styles[key] = {
-        flexBasis: 'auto',
-        flexGrow: 0,
-        maxWidth: 'none'
-      };
-      return;
-    } // Keep 7 significant numbers.
-
-
-    var width = "".concat(Math.round(size / 12 * 10e7) / 10e5, "%"); // Close to the bootstrap implementation:
-    // https://github.com/twbs/bootstrap/blob/8fccaa2439e97ec72a4b7dc42ccc1f649790adb0/scss/mixins/_grid.scss#L41
-
-    styles[key] = {
-      flexBasis: width,
-      flexGrow: 0,
-      maxWidth: width
-    };
-  }); // No need for a media query for the first size.
-
-  if (breakpoint === 'xs') {
-    (0, _extends2.default)(globalStyles, styles);
-  } else {
-    globalStyles[theme.breakpoints.up(breakpoint)] = styles;
-  }
-}
-
-function generateGutter(theme, breakpoint) {
-  var styles = {};
-  GUTTERS.forEach(function (spacing, index) {
-    if (index === 0) {
-      // Skip the default style.
-      return;
-    }
-
-    styles["spacing-".concat(breakpoint, "-").concat(spacing)] = {
-      margin: -spacing / 2,
-      width: "calc(100% + ".concat(spacing, "px)"),
-      '& > $item': {
-        padding: spacing / 2
-      }
-    };
-  });
-  return styles;
-} // Default CSS values
-// flex: '0 1 auto',
-// flexDirection: 'row',
-// alignItems: 'flex-start',
-// flexWrap: 'nowrap',
-// justifyContent: 'flex-start',
-
-
-var styles = function styles(theme) {
-  return (0, _extends2.default)({
-    /* Styles applied to the root element if `container={true}`. */
-    container: {
-      boxSizing: 'border-box',
-      display: 'flex',
-      flexWrap: 'wrap',
-      width: '100%'
-    },
-
-    /* Styles applied to the root element if `item={true}`. */
-    item: {
-      boxSizing: 'border-box',
-      margin: '0' // For instance, it's useful when used with a `figure` element.
-
-    },
-
-    /* Styles applied to the root element if `zeroMinWidth={true}`. */
-    zeroMinWidth: {
-      minWidth: 0
-    },
-
-    /* Styles applied to the root element if `direction="column"`. */
-    'direction-xs-column': {
-      flexDirection: 'column'
-    },
-
-    /* Styles applied to the root element if `direction="column-reverse"`. */
-    'direction-xs-column-reverse': {
-      flexDirection: 'column-reverse'
-    },
-
-    /* Styles applied to the root element if `direction="rwo-reverse"`. */
-    'direction-xs-row-reverse': {
-      flexDirection: 'row-reverse'
-    },
-
-    /* Styles applied to the root element if `wrap="nowrap"`. */
-    'wrap-xs-nowrap': {
-      flexWrap: 'nowrap'
-    },
-
-    /* Styles applied to the root element if `wrap="reverse"`. */
-    'wrap-xs-wrap-reverse': {
-      flexWrap: 'wrap-reverse'
-    },
-
-    /* Styles applied to the root element if `alignItems="center"`. */
-    'align-items-xs-center': {
-      alignItems: 'center'
-    },
-
-    /* Styles applied to the root element if `alignItems="flex-start"`. */
-    'align-items-xs-flex-start': {
-      alignItems: 'flex-start'
-    },
-
-    /* Styles applied to the root element if `alignItems="flex-end"`. */
-    'align-items-xs-flex-end': {
-      alignItems: 'flex-end'
-    },
-
-    /* Styles applied to the root element if `alignItems="baseline"`. */
-    'align-items-xs-baseline': {
-      alignItems: 'baseline'
-    },
-
-    /* Styles applied to the root element if `alignContent="center"`. */
-    'align-content-xs-center': {
-      alignContent: 'center'
-    },
-
-    /* Styles applied to the root element if `alignContent="flex-start"`. */
-    'align-content-xs-flex-start': {
-      alignContent: 'flex-start'
-    },
-
-    /* Styles applied to the root element if `alignContent="flex-end"`. */
-    'align-content-xs-flex-end': {
-      alignContent: 'flex-end'
-    },
-
-    /* Styles applied to the root element if `alignContent="space-between"`. */
-    'align-content-xs-space-between': {
-      alignContent: 'space-between'
-    },
-
-    /* Styles applied to the root element if `alignContent="space-around"`. */
-    'align-content-xs-space-around': {
-      alignContent: 'space-around'
-    },
-
-    /* Styles applied to the root element if `justify="center"`. */
-    'justify-xs-center': {
-      justifyContent: 'center'
-    },
-
-    /* Styles applied to the root element if `justify="flex-end"`. */
-    'justify-xs-flex-end': {
-      justifyContent: 'flex-end'
-    },
-
-    /* Styles applied to the root element if `justify="space-between"`. */
-    'justify-xs-space-between': {
-      justifyContent: 'space-between'
-    },
-
-    /* Styles applied to the root element if `justify="space-around"`. */
-    'justify-xs-space-around': {
-      justifyContent: 'space-around'
-    },
-
-    /* Styles applied to the root element if `justify="space-evenly"`. */
-    'justify-xs-space-evenly': {
-      justifyContent: 'space-evenly'
-    }
-  }, generateGutter(theme, 'xs'), _createBreakpoints.keys.reduce(function (accumulator, key) {
-    // Use side effect over immutability for better performance.
-    generateGrid(accumulator, theme, key);
-    return accumulator;
-  }, {}));
-};
-
-exports.styles = styles;
-
-function Grid(props) {
-  var _classNames;
-
-  var alignContent = props.alignContent,
-      alignItems = props.alignItems,
-      classes = props.classes,
-      classNameProp = props.className,
-      Component = props.component,
-      container = props.container,
-      direction = props.direction,
-      item = props.item,
-      justify = props.justify,
-      lg = props.lg,
-      md = props.md,
-      sm = props.sm,
-      spacing = props.spacing,
-      wrap = props.wrap,
-      xl = props.xl,
-      xs = props.xs,
-      zeroMinWidth = props.zeroMinWidth,
-      other = (0, _objectWithoutProperties2.default)(props, ["alignContent", "alignItems", "classes", "className", "component", "container", "direction", "item", "justify", "lg", "md", "sm", "spacing", "wrap", "xl", "xs", "zeroMinWidth"]);
-  var className = (0, _classnames.default)((_classNames = {}, (0, _defineProperty2.default)(_classNames, classes.container, container), (0, _defineProperty2.default)(_classNames, classes.item, item), (0, _defineProperty2.default)(_classNames, classes.zeroMinWidth, zeroMinWidth), (0, _defineProperty2.default)(_classNames, classes["spacing-xs-".concat(String(spacing))], container && spacing !== 0), (0, _defineProperty2.default)(_classNames, classes["direction-xs-".concat(String(direction))], direction !== Grid.defaultProps.direction), (0, _defineProperty2.default)(_classNames, classes["wrap-xs-".concat(String(wrap))], wrap !== Grid.defaultProps.wrap), (0, _defineProperty2.default)(_classNames, classes["align-items-xs-".concat(String(alignItems))], alignItems !== Grid.defaultProps.alignItems), (0, _defineProperty2.default)(_classNames, classes["align-content-xs-".concat(String(alignContent))], alignContent !== Grid.defaultProps.alignContent), (0, _defineProperty2.default)(_classNames, classes["justify-xs-".concat(String(justify))], justify !== Grid.defaultProps.justify), (0, _defineProperty2.default)(_classNames, classes["grid-xs-".concat(String(xs))], xs !== false), (0, _defineProperty2.default)(_classNames, classes["grid-sm-".concat(String(sm))], sm !== false), (0, _defineProperty2.default)(_classNames, classes["grid-md-".concat(String(md))], md !== false), (0, _defineProperty2.default)(_classNames, classes["grid-lg-".concat(String(lg))], lg !== false), (0, _defineProperty2.default)(_classNames, classes["grid-xl-".concat(String(xl))], xl !== false), _classNames), classNameProp);
-  return _react.default.createElement(Component, (0, _extends2.default)({
-    className: className
-  }, other));
-}
-
- true ? Grid.propTypes = {
-  /**
-   * Defines the `align-content` style property.
-   * It's applied for all screen sizes.
-   */
-  alignContent: _propTypes.default.oneOf(['stretch', 'center', 'flex-start', 'flex-end', 'space-between', 'space-around']),
-
-  /**
-   * Defines the `align-items` style property.
-   * It's applied for all screen sizes.
-   */
-  alignItems: _propTypes.default.oneOf(['flex-start', 'center', 'flex-end', 'stretch', 'baseline']),
-
-  /**
-   * The content of the component.
-   */
-  children: _propTypes.default.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css-api) below for more details.
-   */
-  classes: _propTypes.default.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a DOM element or a component.
-   */
-  component: _utils.componentPropType,
-
-  /**
-   * If `true`, the component will have the flex *container* behavior.
-   * You should be wrapping *items* with a *container*.
-   */
-  container: _propTypes.default.bool,
-
-  /**
-   * Defines the `flex-direction` style property.
-   * It is applied for all screen sizes.
-   */
-  direction: _propTypes.default.oneOf(['row', 'row-reverse', 'column', 'column-reverse']),
-
-  /**
-   * If `true`, the component will have the flex *item* behavior.
-   * You should be wrapping *items* with a *container*.
-   */
-  item: _propTypes.default.bool,
-
-  /**
-   * Defines the `justify-content` style property.
-   * It is applied for all screen sizes.
-   */
-  justify: _propTypes.default.oneOf(['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly']),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `lg` breakpoint and wider screens if not overridden.
-   */
-  lg: _propTypes.default.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `md` breakpoint and wider screens if not overridden.
-   */
-  md: _propTypes.default.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `sm` breakpoint and wider screens if not overridden.
-   */
-  sm: _propTypes.default.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the space between the type `item` component.
-   * It can only be used on a type `container` component.
-   */
-  spacing: _propTypes.default.oneOf(GUTTERS),
-
-  /**
-   * Defines the `flex-wrap` style property.
-   * It's applied for all screen sizes.
-   */
-  wrap: _propTypes.default.oneOf(['nowrap', 'wrap', 'wrap-reverse']),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for the `xl` breakpoint and wider screens.
-   */
-  xl: _propTypes.default.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * Defines the number of grids the component is going to use.
-   * It's applied for all the screen sizes with the lowest priority.
-   */
-  xs: _propTypes.default.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-
-  /**
-   * If `true`, it sets `min-width: 0` on the item.
-   * Refer to the limitations section of the documentation to better understand the use case.
-   */
-  zeroMinWidth: _propTypes.default.bool
-} : undefined;
-Grid.defaultProps = {
-  alignContent: 'stretch',
-  alignItems: 'stretch',
-  component: 'div',
-  container: false,
-  direction: 'row',
-  item: false,
-  justify: 'flex-start',
-  lg: false,
-  md: false,
-  sm: false,
-  spacing: 0,
-  wrap: 'wrap',
-  xl: false,
-  xs: false,
-  zeroMinWidth: false
-};
-var StyledGrid = (0, _withStyles.default)(styles, {
-  name: 'MuiGrid'
-})(Grid);
-
-if (true) {
-  var requireProp = (0, _requirePropFactory.default)('Grid');
-  StyledGrid.propTypes = (0, _extends2.default)({}, StyledGrid.propTypes, {
-    alignContent: requireProp('container'),
-    alignItems: requireProp('container'),
-    direction: requireProp('container'),
-    justify: requireProp('container'),
-    lg: requireProp('item'),
-    md: requireProp('item'),
-    sm: requireProp('item'),
-    spacing: requireProp('container'),
-    wrap: requireProp('container'),
-    xs: requireProp('item'),
-    zeroMinWidth: requireProp('zeroMinWidth')
-  });
-}
-
-var _default = StyledGrid;
-exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/Grid/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@material-ui/core/Grid/index.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _Grid.default;
-  }
-});
-
-var _Grid = _interopRequireDefault(__webpack_require__(/*! ./Grid */ "./node_modules/@material-ui/core/Grid/Grid.js"));
 
 /***/ }),
 
@@ -18618,45 +17351,6 @@ function setRef(ref, value) {
     ref.current = value;
   }
 }
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/utils/requirePropFactory.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@material-ui/core/utils/requirePropFactory.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-function requirePropFactory(componentNameInError) {
-  /* istanbul ignore if */
-  if (false) {}
-
-  var requireProp = function requireProp(requiredProp) {
-    return function (props, propName, componentName, location, propFullName) {
-      var propFullNameSafe = propFullName || propName;
-
-      if (typeof props[propName] !== 'undefined' && !props[requiredProp]) {
-        return new Error("The property `".concat(propFullNameSafe, "` of ") + "`".concat(componentNameInError, "` must be used on `").concat(requiredProp, "`."));
-      }
-
-      return null;
-    };
-  };
-
-  return requireProp;
-}
-
-var _default = requirePropFactory;
-exports.default = _default;
 
 /***/ }),
 
@@ -38182,24 +36876,38 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
+/***/ "./pages/LogIn.js":
 /*!************************!*\
-  !*** ./pages/index.js ***!
+  !*** ./pages/LogIn.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_withRoot__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/withRoot */ "./modules/withRoot.js");
-/* harmony import */ var _modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/views/AppAppBar */ "./modules/views/AppAppBar.js");
-/* harmony import */ var _modules_views_SearchWindow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/views/SearchWindow */ "./modules/views/SearchWindow.js");
-/* harmony import */ var _modules_views_ScrollView__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/views/ScrollView */ "./modules/views/ScrollView.js");
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\pages\\index.js";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _modules_withRoot__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/withRoot */ "./modules/withRoot.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var recompose_compose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! recompose/compose */ "./node_modules/recompose/compose.js");
+/* harmony import */ var recompose_compose__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(recompose_compose__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_final_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-final-form */ "./node_modules/react-final-form/dist/react-final-form.es.js");
+/* harmony import */ var _modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../modules/components/Typography */ "./modules/components/Typography.js");
+/* harmony import */ var _modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../modules/views/AppAppBar */ "./modules/views/AppAppBar.js");
+/* harmony import */ var _modules_next_Link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../modules/next/Link */ "./modules/next/Link.js");
+/* harmony import */ var _modules_views_AppForm__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../modules/views/AppForm */ "./modules/views/AppForm.js");
+/* harmony import */ var _modules_form_validation__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../modules/form/validation */ "./modules/form/validation.js");
+/* harmony import */ var _modules_form_RFTextField__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/form/RFTextField */ "./modules/form/RFTextField.js");
+/* harmony import */ var _modules_form_FormButton__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../modules/form/FormButton */ "./modules/form/FormButton.js");
+/* harmony import */ var _modules_form_FormFeedback__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../modules/form/FormFeedback */ "./modules/form/FormFeedback.js");
+var _jsxFileName = "F:\\Projects\\airbnb_demo\\pages\\LogIn.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -38209,84 +36917,260 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+ // --- Post bootstrap -----
 
 
 
- //import Background from '../img/background_image.jpg';
 
 
-var styles = {
-  paperContainer: {
-    width: "100%",
-    height: "1400px",
-    //backgroundImage: "url(" + Background  + ")",
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-  }
+
+ //import AppFooter from '../modules/views/AppFooter';
+
+
+
+
+
+
+
+
+
+var styles = function styles(theme) {
+  return {
+    form: {
+      marginTop: theme.spacing.unit * 6
+    },
+    button: {
+      marginTop: theme.spacing.unit * 3,
+      marginBottom: theme.spacing.unit * 2
+    },
+    feedback: {
+      marginTop: theme.spacing.unit * 2
+    }
+  };
 };
 
-var App =
+var SignIn =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(App, _React$Component);
+  _inherits(SignIn, _React$Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function SignIn() {
+    var _getPrototypeOf2;
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    var _this;
+
+    _classCallCheck(this, SignIn);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SignIn)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      sent: false
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "validate", function (values) {
+      var errors = Object(_modules_form_validation__WEBPACK_IMPORTED_MODULE_10__["required"])(['email', 'password'], values, _this.props);
+
+      if (!errors.email) {
+        var emailError = Object(_modules_form_validation__WEBPACK_IMPORTED_MODULE_10__["email"])(values.email, values, _this.props);
+
+        if (emailError) {
+          errors.email = Object(_modules_form_validation__WEBPACK_IMPORTED_MODULE_10__["email"])(values.email, values, _this.props);
+        }
+      }
+
+      return errors;
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function () {});
+
+    return _this;
   }
 
-  _createClass(App, [{
+  _createClass(SignIn, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+      var classes = this.props.classes;
+      var sent = this.state.sent;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 56
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.paperContainer,
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 57
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_views_AppForm__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 58
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modules_views_SearchWindow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 59
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modules_views_ScrollView__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        variant: "h3",
+        gutterBottom: true,
+        marked: "center",
+        align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 60
         },
         __self: this
-      }));
+      }, "Sign In"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        variant: "body2",
+        align: "center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, 'Not a member yet? ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_next_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        href: "/premium-themes/onepirate/sign-up",
+        variant: "underline",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      }, "Sign Up here"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Form"], {
+        onSubmit: this.handleSubmit,
+        subscription: {
+          submitting: true
+        },
+        validate: this.validate,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }, function (_ref) {
+        var handleSubmit = _ref.handleSubmit,
+            submitting = _ref.submitting;
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+          onSubmit: handleSubmit,
+          className: classes.form,
+          noValidate: true,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
+          autoComplete: "email",
+          autoFocus: true,
+          component: _modules_form_RFTextField__WEBPACK_IMPORTED_MODULE_11__["default"],
+          disabled: submitting || sent,
+          fullWidth: true,
+          label: "Email",
+          margin: "normal",
+          name: "email",
+          required: true,
+          size: "large",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 77
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
+          fullWidth: true,
+          size: "large",
+          component: _modules_form_RFTextField__WEBPACK_IMPORTED_MODULE_11__["default"],
+          disabled: submitting || sent,
+          required: true,
+          name: "password",
+          autoComplete: "current-password",
+          label: "Password",
+          type: "password",
+          margin: "normal",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["FormSpy"], {
+          subscription: {
+            submitError: true
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 101
+          },
+          __self: this
+        }, function (_ref2) {
+          var submitError = _ref2.submitError;
+          return submitError ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_form_FormFeedback__WEBPACK_IMPORTED_MODULE_13__["default"], {
+            className: classes.feedback,
+            error: true,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 104
+            },
+            __self: this
+          }, submitError) : null;
+        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_form_FormButton__WEBPACK_IMPORTED_MODULE_12__["default"], {
+          className: classes.button,
+          disabled: submitting || sent,
+          size: "large",
+          color: "secondary",
+          fullWidth: true,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 110
+          },
+          __self: this
+        }, submitting || sent ? 'In progress…' : 'Sign In'));
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: function component(linkProps) {
+          return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_next_Link__WEBPACK_IMPORTED_MODULE_8__["default"], _extends({}, linkProps, {
+            variant: "underline",
+            href: "/premium-themes/onepirate/forgot-password",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 124
+            },
+            __self: this
+          }));
+        },
+        align: "center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122
+        },
+        __self: this
+      }, "Forgot password?")));
     }
   }]);
 
-  return App;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+  return SignIn;
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_modules_withRoot__WEBPACK_IMPORTED_MODULE_1__["default"])(App));
+SignIn.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (recompose_compose__WEBPACK_IMPORTED_MODULE_3___default()(_modules_withRoot__WEBPACK_IMPORTED_MODULE_0__["default"], Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["withStyles"])(styles))(SignIn));
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -38303,21 +37187,21 @@ function (_React$Component) {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/LogIn")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
-  !*** multi ./pages/index.js ***!
+  !*** multi ./pages/LogIn.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/', function() {
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+__NEXT_REGISTER_PAGE('/LogIn', function() {
+module.exports = __webpack_require__(/*! ./pages/LogIn.js */"./pages/LogIn.js");
 
 return { page: module.exports.default }});
 
@@ -38334,5 +37218,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[5,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=LogIn.js.map

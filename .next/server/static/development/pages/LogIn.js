@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -205,61 +205,6 @@ function Button(props) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(Button));
-
-/***/ }),
-
-/***/ "./modules/components/Card.js":
-/*!************************************!*\
-  !*** ./modules/components/Card.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Card */ "@material-ui/core/Card");
-/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\modules\\components\\Card.js";
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    card: {
-      display: 'flex',
-      width: 50
-    }
-  };
-};
-
-function MediaControlCard(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, _extends({}, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }));
-}
-
-MediaControlCard.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles, {
-  withTheme: true
-})(MediaControlCard));
 
 /***/ }),
 
@@ -1717,413 +1662,6 @@ AppForm.propTypes = {
 
 /***/ }),
 
-/***/ "./modules/views/ScrollView.js":
-/*!*************************************!*\
-  !*** ./modules/views/ScrollView.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Card */ "./modules/components/Card.js");
-/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CardContent */ "@material-ui/core/CardContent");
-/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/CardMedia */ "@material-ui/core/CardMedia");
-/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\modules\\views\\ScrollView.js";
-
-
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    details: {
-      display: 'flex',
-      flexDirection: 'column'
-    },
-    content: {
-      flex: '1 0 auto'
-    },
-    cover: {
-      width: 151
-    },
-    controls: {
-      display: 'flex',
-      alignItems: 'center',
-      paddingLeft: theme.spacing.unit,
-      paddingBottom: theme.spacing.unit
-    },
-    playIcon: {
-      height: 38,
-      width: 38
-    }
-  };
-};
-
-function ScrollView(props) {
-  var classes = props.classes,
-      theme = props.theme;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    position: "absolute",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.details,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    className: classes.content,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    component: "h5",
-    variant: "h5",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "Live From Space"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    variant: "subtitle1",
-    color: "textSecondary",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, "Mac Miller"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    className: classes.cover,
-    image: "/static/images/cards/live-from-space.jpg",
-    title: "Live from space album cover",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }));
-}
-
-ScrollView.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(ScrollView));
-
-/***/ }),
-
-/***/ "./modules/views/SearchWindow.js":
-/*!***************************************!*\
-  !*** ./modules/views/SearchWindow.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_final_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-final-form */ "react-final-form");
-/* harmony import */ var react_final_form__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_final_form__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Typography */ "./modules/components/Typography.js");
-/* harmony import */ var _views_AppForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../views/AppForm */ "./modules/views/AppForm.js");
-/* harmony import */ var _form_validation__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../form/validation */ "./modules/form/validation.js");
-/* harmony import */ var _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../form/RFTextField */ "./modules/form/RFTextField.js");
-/* harmony import */ var _form_FormButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../form/FormButton */ "./modules/form/FormButton.js");
-/* harmony import */ var _form_FormFeedback__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../form/FormFeedback */ "./modules/form/FormFeedback.js");
-/* harmony import */ var _next_Link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../next/Link */ "./modules/next/Link.js");
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\modules\\views\\SearchWindow.js";
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    box: {
-      position: 'absolute',
-      left: 550,
-      top: 150,
-      borderRadius: 50
-    }
-  };
-};
-
-var SearchWindow =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(SearchWindow, _React$Component);
-
-  function SearchWindow() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    _classCallCheck(this, SearchWindow);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchWindow)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      sent: false
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "validate", function (values) {
-      var errors = Object(_form_validation__WEBPACK_IMPORTED_MODULE_8__["required"])(['firstName', 'lastName', 'email', 'password'], values, _this.props);
-
-      if (!errors.email) {
-        var emailError = Object(_form_validation__WEBPACK_IMPORTED_MODULE_8__["email"])(values.email, values, _this.props);
-
-        if (emailError) {
-          errors.email = Object(_form_validation__WEBPACK_IMPORTED_MODULE_8__["email"])(values.email, values, _this.props);
-        }
-      }
-
-      return errors;
-    });
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function () {});
-
-    return _this;
-  }
-
-  _createClass(SearchWindow, [{
-    key: "render",
-    value: function render() {
-      var classes = this.props.classes;
-      var sent = this.state.sent;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classes.box,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_AppForm__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        variant: "h4",
-        gutterBottom: true,
-        align: "left",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, "Book unique homes and experiences.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Form"], {
-        onSubmit: this.handleSubmit,
-        subscription: {
-          submitting: true
-        },
-        validate: this.validate,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }, function (_ref) {
-        var handleSubmit = _ref.handleSubmit,
-            submitting = _ref.submitting;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-          onSubmit: handleSubmit,
-          noValidate: true,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 63
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          container: true,
-          spacing: 16,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 64
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          item: true,
-          xs: 12,
-          sm: 12,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 65
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          fullWidth: true,
-          label: "Where",
-          name: "where",
-          required: true,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 66
-          },
-          __self: this
-        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-          item: true,
-          xs: 12,
-          sm: 12,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 74
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          disabled: submitting || sent,
-          fullWidth: true,
-          label: "Check In",
-          margin: "normal",
-          name: "checkin",
-          type: "date",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 75
-          },
-          __self: this
-        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          disabled: submitting || sent,
-          fullWidth: true,
-          label: "Check In",
-          margin: "normal",
-          name: "checkin",
-          type: "date",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 86
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
-          fullWidth: true,
-          component: _form_RFTextField__WEBPACK_IMPORTED_MODULE_9__["default"],
-          disabled: submitting || sent,
-          name: "guests",
-          label: "Guests",
-          type: "select",
-          margin: "normal",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 95
-          },
-          __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["FormSpy"], {
-          subscription: {
-            submitError: true
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 104
-          },
-          __self: this
-        }, function (_ref2) {
-          var submitError = _ref2.submitError;
-          return submitError ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_FormFeedback__WEBPACK_IMPORTED_MODULE_11__["default"], {
-            className: classes.feedback,
-            error: true,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 107
-            },
-            __self: this
-          }, submitError) : null;
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_FormButton__WEBPACK_IMPORTED_MODULE_10__["default"], {
-          className: classes.button,
-          disabled: submitting || sent,
-          color: "secondary",
-          fullWidth: true,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 113
-          },
-          __self: this
-        }, submitting || sent ? 'In progress…' : 'Search'));
-      })));
-    }
-  }]);
-
-  return SearchWindow;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-SearchWindow.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["withStyles"])(styles)(SearchWindow));
-
-/***/ }),
-
 /***/ "./modules/withRoot.js":
 /*!*****************************!*\
   !*** ./modules/withRoot.js ***!
@@ -2181,24 +1719,39 @@ function withRoot(Component) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
+/***/ "./pages/LogIn.js":
 /*!************************!*\
-  !*** ./pages/index.js ***!
+  !*** ./pages/LogIn.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_withRoot__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/withRoot */ "./modules/withRoot.js");
-/* harmony import */ var _modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/views/AppAppBar */ "./modules/views/AppAppBar.js");
-/* harmony import */ var _modules_views_SearchWindow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/views/SearchWindow */ "./modules/views/SearchWindow.js");
-/* harmony import */ var _modules_views_ScrollView__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/views/ScrollView */ "./modules/views/ScrollView.js");
-var _jsxFileName = "F:\\Projects\\airbnb_demo\\pages\\index.js";
+/* harmony import */ var _modules_withRoot__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/withRoot */ "./modules/withRoot.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var recompose_compose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! recompose/compose */ "recompose/compose");
+/* harmony import */ var recompose_compose__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(recompose_compose__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_final_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-final-form */ "react-final-form");
+/* harmony import */ var react_final_form__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_final_form__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../modules/components/Typography */ "./modules/components/Typography.js");
+/* harmony import */ var _modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../modules/views/AppAppBar */ "./modules/views/AppAppBar.js");
+/* harmony import */ var _modules_next_Link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../modules/next/Link */ "./modules/next/Link.js");
+/* harmony import */ var _modules_views_AppForm__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../modules/views/AppForm */ "./modules/views/AppForm.js");
+/* harmony import */ var _modules_form_validation__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../modules/form/validation */ "./modules/form/validation.js");
+/* harmony import */ var _modules_form_RFTextField__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/form/RFTextField */ "./modules/form/RFTextField.js");
+/* harmony import */ var _modules_form_FormButton__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../modules/form/FormButton */ "./modules/form/FormButton.js");
+/* harmony import */ var _modules_form_FormFeedback__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../modules/form/FormFeedback */ "./modules/form/FormFeedback.js");
+var _jsxFileName = "F:\\Projects\\airbnb_demo\\pages\\LogIn.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2208,95 +1761,271 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+ // --- Post bootstrap -----
 
 
 
- //import Background from '../img/background_image.jpg';
 
 
-var styles = {
-  paperContainer: {
-    width: "100%",
-    height: "1400px",
-    //backgroundImage: "url(" + Background  + ")",
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-  }
+
+ //import AppFooter from '../modules/views/AppFooter';
+
+
+
+
+
+
+
+
+
+var styles = function styles(theme) {
+  return {
+    form: {
+      marginTop: theme.spacing.unit * 6
+    },
+    button: {
+      marginTop: theme.spacing.unit * 3,
+      marginBottom: theme.spacing.unit * 2
+    },
+    feedback: {
+      marginTop: theme.spacing.unit * 2
+    }
+  };
 };
 
-var App =
+var SignIn =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(App, _React$Component);
+  _inherits(SignIn, _React$Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function SignIn() {
+    var _getPrototypeOf2;
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    var _this;
+
+    _classCallCheck(this, SignIn);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SignIn)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      sent: false
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "validate", function (values) {
+      var errors = Object(_modules_form_validation__WEBPACK_IMPORTED_MODULE_10__["required"])(['email', 'password'], values, _this.props);
+
+      if (!errors.email) {
+        var emailError = Object(_modules_form_validation__WEBPACK_IMPORTED_MODULE_10__["email"])(values.email, values, _this.props);
+
+        if (emailError) {
+          errors.email = Object(_modules_form_validation__WEBPACK_IMPORTED_MODULE_10__["email"])(values.email, values, _this.props);
+        }
+      }
+
+      return errors;
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function () {});
+
+    return _this;
   }
 
-  _createClass(App, [{
+  _createClass(SignIn, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+      var classes = this.props.classes;
+      var sent = this.state.sent;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 56
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.paperContainer,
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 57
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modules_views_AppAppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_views_AppForm__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 58
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modules_views_SearchWindow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 59
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modules_views_ScrollView__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        variant: "h3",
+        gutterBottom: true,
+        marked: "center",
+        align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 60
         },
         __self: this
-      }));
+      }, "Sign In"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        variant: "body2",
+        align: "center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, 'Not a member yet? ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_next_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        href: "/premium-themes/onepirate/sign-up",
+        variant: "underline",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      }, "Sign Up here"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Form"], {
+        onSubmit: this.handleSubmit,
+        subscription: {
+          submitting: true
+        },
+        validate: this.validate,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70
+        },
+        __self: this
+      }, function (_ref) {
+        var handleSubmit = _ref.handleSubmit,
+            submitting = _ref.submitting;
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+          onSubmit: handleSubmit,
+          className: classes.form,
+          noValidate: true,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
+          autoComplete: "email",
+          autoFocus: true,
+          component: _modules_form_RFTextField__WEBPACK_IMPORTED_MODULE_11__["default"],
+          disabled: submitting || sent,
+          fullWidth: true,
+          label: "Email",
+          margin: "normal",
+          name: "email",
+          required: true,
+          size: "large",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 77
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["Field"], {
+          fullWidth: true,
+          size: "large",
+          component: _modules_form_RFTextField__WEBPACK_IMPORTED_MODULE_11__["default"],
+          disabled: submitting || sent,
+          required: true,
+          name: "password",
+          autoComplete: "current-password",
+          label: "Password",
+          type: "password",
+          margin: "normal",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_final_form__WEBPACK_IMPORTED_MODULE_5__["FormSpy"], {
+          subscription: {
+            submitError: true
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 101
+          },
+          __self: this
+        }, function (_ref2) {
+          var submitError = _ref2.submitError;
+          return submitError ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_form_FormFeedback__WEBPACK_IMPORTED_MODULE_13__["default"], {
+            className: classes.feedback,
+            error: true,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 104
+            },
+            __self: this
+          }, submitError) : null;
+        }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_form_FormButton__WEBPACK_IMPORTED_MODULE_12__["default"], {
+          className: classes.button,
+          disabled: submitting || sent,
+          size: "large",
+          color: "secondary",
+          fullWidth: true,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 110
+          },
+          __self: this
+        }, submitting || sent ? 'In progress…' : 'Sign In'));
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_components_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: function component(linkProps) {
+          return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_modules_next_Link__WEBPACK_IMPORTED_MODULE_8__["default"], _extends({}, linkProps, {
+            variant: "underline",
+            href: "/premium-themes/onepirate/forgot-password",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 124
+            },
+            __self: this
+          }));
+        },
+        align: "center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122
+        },
+        __self: this
+      }, "Forgot password?")));
     }
   }]);
 
-  return App;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+  return SignIn;
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_modules_withRoot__WEBPACK_IMPORTED_MODULE_1__["default"])(App));
+SignIn.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (recompose_compose__WEBPACK_IMPORTED_MODULE_3___default()(_modules_withRoot__WEBPACK_IMPORTED_MODULE_0__["default"], Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["withStyles"])(styles))(SignIn));
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
-  !*** multi ./pages/index.js ***!
+  !*** multi ./pages/LogIn.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! ./pages/LogIn.js */"./pages/LogIn.js");
 
 
 /***/ }),
@@ -2323,39 +2052,6 @@ module.exports = require("@material-ui/core/Button");
 
 /***/ }),
 
-/***/ "@material-ui/core/Card":
-/*!*****************************************!*\
-  !*** external "@material-ui/core/Card" ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Card");
-
-/***/ }),
-
-/***/ "@material-ui/core/CardContent":
-/*!************************************************!*\
-  !*** external "@material-ui/core/CardContent" ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/CardContent");
-
-/***/ }),
-
-/***/ "@material-ui/core/CardMedia":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/CardMedia" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/CardMedia");
-
-/***/ }),
-
 /***/ "@material-ui/core/CssBaseline":
 /*!************************************************!*\
   !*** external "@material-ui/core/CssBaseline" ***!
@@ -2364,17 +2060,6 @@ module.exports = require("@material-ui/core/CardMedia");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/CssBaseline");
-
-/***/ }),
-
-/***/ "@material-ui/core/Grid":
-/*!*****************************************!*\
-  !*** external "@material-ui/core/Grid" ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Grid");
 
 /***/ }),
 
@@ -2566,4 +2251,4 @@ module.exports = require("validator/lib/isEmail");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=LogIn.js.map
